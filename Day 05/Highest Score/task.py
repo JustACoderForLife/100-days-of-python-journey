@@ -1,0 +1,6 @@
+student_scores = [8, 65, 89, 55, 91, 64, 89]
+highest_score = student_scores[0]
+for score in student_scores:
+    if score > highest_score:
+        highest_score = score
+print(highest_score)
