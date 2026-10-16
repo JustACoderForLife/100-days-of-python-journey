@@ -220,3 +220,7 @@ __marimo__/
 .venv/
 .idea/
 *.yaml
+
+
+# Allow Snake Game code files even if inside folders
+!/Day 20 and Day 21 - Snake Game/*.py
