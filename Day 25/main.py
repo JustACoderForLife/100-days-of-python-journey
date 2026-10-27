@@ -18,9 +18,9 @@ while game_on:
     data = pandas.read_csv("50_states.csv")
 
     if answer_state == "Exit":
-        for state in data["state"].to_list():
-            if answer_state != state:
-                states_to_learn.append(state)
+        states_to_learn = [
+            state for state in data["state"].to_list() if state not in correct_answers
+        ]
         df = pandas.DataFrame(states_to_learn, columns=["States to Learn"])
         df.to_csv("states_to_learn.csv")
         break
